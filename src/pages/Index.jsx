@@ -19,7 +19,7 @@ const Index = () => {
         <Box id="welcome" p={8} bg="gray.100">
           <Flex align="center" justify="space-between">
             <VStack align="start">
-              <Text fontSize="2xl" fontWeight="bold">Hello, I'm John Doe</Text>
+              <Text fontSize="2xl" fontWeight="bold">Hello, I'm Kristian Kyvik</Text>
               <Text fontSize="lg">A passionate Software Developer based in NYC</Text>
             </VStack>
             <Image borderRadius="full" boxSize="150px" src="/images/profile.jpg" alt="John Doe" />
