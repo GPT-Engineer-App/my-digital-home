@@ -9,7 +9,10 @@ const Index = () => {
           <Text fontSize="xl" fontWeight="bold">John Doe</Text>
           <Flex>
             <Link href="#welcome" p={2}>Welcome</Link>
-            <Link href="#skills" p={2}>Skills</Link>
+            <Link href="#skills" p={2} onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('skills').scrollIntoView({ behavior: 'smooth' });
+            }}>Skills</Link>
             <Link href="#projects" p={2}>Projects</Link>
             <Link href="#contact" p={2}>Contact</Link>
           </Flex>
@@ -25,9 +28,9 @@ const Index = () => {
             <Image borderRadius="full" boxSize="150px" src="/images/profile.jpg" alt="John Doe" />
           </Flex>
         </Box>
-        <Box id="skills" p={8}>
+        <Box id="skills" p={16} bg="brand.700" mt={10}>
           <Text fontSize="2xl" fontWeight="bold" mb={4}>Skills</Text>
-          <Flex justify="space-around">
+          <Flex justify="space-around" align="center" wrap="wrap">
             <Text>JavaScript</Text>
             <Text>React</Text>
             <Text>Node.js</Text>
