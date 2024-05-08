@@ -25,9 +25,9 @@ const Index = () => {
             <Image borderRadius="full" boxSize="150px" src="/images/profile.jpg" alt="John Doe" />
           </Flex>
         </Box>
-        <Box id="skills" p={8}>
+        <Box id="skills" p={16} bg="brand.700" border="1px" borderColor="gray.200" borderRadius="md">
           <Text fontSize="2xl" fontWeight="bold" mb={4}>Skills</Text>
-          <Flex justify="space-around">
+          <Flex justify="space-evenly" align="center">
             <Text>JavaScript</Text>
             <Text>React</Text>
             <Text>Node.js</Text>
